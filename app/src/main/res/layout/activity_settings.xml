@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical"
+    android:background="@color/softGray"
+    android:layoutDirection="ltr"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/settings_user_profile_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:onClick="addPicture"
+                android:src="@drawable/add_user" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nickname"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/editNickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/nickname"
+                        android:src="@drawable/ic_edit_white_24dp"
+                        android:background="@drawable/round_corners"
+                        android:onClick="changeNickname"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="to change photo, press on it..."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/goToRecordsBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:text="Go to records directory"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:onClick="goToRecordsDirectory"
+            android:background="@drawable/round_shape_btn_green"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/ChangePermissionBtn"
+            android:layout_below="@id/goToRecordsBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:text="Change permissions"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:onClick="changePermissions"
+            android:background="@drawable/round_shape_btn_green"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

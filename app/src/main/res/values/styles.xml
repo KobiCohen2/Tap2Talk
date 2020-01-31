@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/darkGreen</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="greenProgress" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/darkGreen</item>
+        <item name="colorControlActivated">@color/darkGreen</item>
+        <item name="colorControlHighlight">@color/darkGreen</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/darkGreen</item>
+    </style>
+
+    <style name="FullyTranslucent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:progressBarStyle">@style/InvisibleProgress</item>
+    </style>
+
+    <style name="InvisibleProgress">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Switch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">
+            @color/green
+        </item>
+        <item name="colorSwitchThumbNormal">
+            @color/white
+        </item>
+    </style>
+
+</resources>

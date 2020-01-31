@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "743648832719",
+    "firebase_url": "https://tap2talk-321c7.firebaseio.com",
+    "project_id": "tap2talk-321c7",
+    "storage_bucket": "tap2talk-321c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743648832719:android:19e8a31dbb702cf0",
+        "android_client_info": {
+          "package_name": "com.example.a201.t2t"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743648832719-kd18er6p7f2i897gvhdv182g5hm3gik8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a201.t2t",
+            "certificate_hash": "7d7ed37cf0b2081f576a08a9c3a1d110739ae376"
+          }
+        },
+        {
+          "client_id": "743648832719-18iaa9rkrhl4lplsh1udsve4bblcd629.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfuzKVxZhVi6OEn_Re9khIJiQQle-Owpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743648832719-18iaa9rkrhl4lplsh1udsve4bblcd629.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

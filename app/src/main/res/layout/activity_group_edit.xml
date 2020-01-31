@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupEditActivity"
+    android:orientation="vertical"
+    android:background="@color/softGray"
+    android:layoutDirection="ltr">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/softGray">
+
+        <RelativeLayout
+            android:id="@+id/group_first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/group_icon_image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/megaphone"
+                android:padding="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/group_icon_image_view"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/group_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Group Name"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_first_layout"
+            android:background="@color/softGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/group_info_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Group"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/round_shape_btn_red"
+                android:onClick="deleteGroup"/>
+
+            <Button
+                android:id="@+id/group_info_confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Group"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginEnd="50dp"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/round_shape_btn_green"
+                android:onClick="confirmGroup"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_border_and_background">
+
+        <ListView
+            android:id="@+id/edit_group_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+</LinearLayout>

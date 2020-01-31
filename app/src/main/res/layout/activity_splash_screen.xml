@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/softGray">
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/t2t_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T2T"
+        android:textColor="@color/green"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:textSize="80sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap2Talk"
+        android:textColor="@color/green"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:textSize="30sp" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="@color/green"/>
+
+</LinearLayout>

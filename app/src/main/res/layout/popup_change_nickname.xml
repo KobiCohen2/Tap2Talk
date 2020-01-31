@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/softGray">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit your Nickname"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        />
+
+    <EditText
+        android:id="@+id/new_nickname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:textCursorDrawable="@null"
+        >
+
+        <requestFocus />
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+
+        <Button
+            android:id="@+id/popup_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/softGray"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/popup_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/softRed"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/softGray"
+            style="?android:attr/borderlessButtonStyle"
+            />
+    </LinearLayout>
+</LinearLayout>
